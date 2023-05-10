@@ -11,6 +11,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    cd user-context-provider
     npm run build
     npm publish 
   displayName: 'Build and publish npm package'
