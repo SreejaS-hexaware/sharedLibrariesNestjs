@@ -5,10 +5,6 @@ trigger:
   paths:
     exclude:
       - "*"
-pr:
-  branches:
-    exclude:
-      - "*"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -25,3 +21,4 @@ steps:
     npm run build
     npm publish 
   displayName: 'Build and publish npm package'
+  condition: eq(variables['Build.Reason'], 'IndividualCI')
