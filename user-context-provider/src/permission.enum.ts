@@ -13,7 +13,7 @@ export enum PermissionEnum {
     ASSIGN_ALL_APP_USERS = 'assignallappusers',
     REVOKE_APP_USERS = 'revokeappusers',
     REVOKE_ALL_APP_USERS = 'revokeallappusers',
-    // OPS = operatioons
+    // OPS = operations
     ADD_APP_OPS = 'addappops',
     ADD_ALL_APP_OPS = 'addallappops',
     VIEW_APP_OPS = 'viewappops',
