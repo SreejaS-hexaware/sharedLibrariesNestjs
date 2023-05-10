@@ -12,6 +12,7 @@ steps:
 
 - script: |
     cd user-context-provider
+    npm install
     npm run build
     npm publish 
   displayName: 'Build and publish npm package'
