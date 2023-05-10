@@ -1,8 +1,7 @@
 on:
   push:
     branches:
-      include:
-        - main
+      - main 
 
 pool:
   vmImage: 'ubuntu-latest'
