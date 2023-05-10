@@ -26,7 +26,6 @@ export class UserContextProvider extends RequestContext {
 
     get email(): string {
         const ctx: UserContextProvider = RequestContext.get();
-        console.log("ctx3: ", ctx);
         return ctx._user.email.toLowerCase();
     }
 
