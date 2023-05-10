@@ -1,6 +1,14 @@
 trigger:
-- main
-
+  branches:
+    include:
+      - main
+  paths:
+    exclude:
+      - '*'
+  branches:
+    exclude:
+      - main
+      
 pool:
   vmImage: 'ubuntu-latest'
 
