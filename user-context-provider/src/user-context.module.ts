@@ -10,4 +10,4 @@ import { UserContextProvider } from './user-context.service';
   }),],
   providers: [UserContextProvider]
 })
-export class UserContextModule {}
+export class UserContextModule { }
