@@ -1,5 +1,5 @@
 export enum PermissionEnum {
-    
+
     ADD_APP = 'addapp',
     VIEW_APP = 'viewapp',
     VIEW_ALL_APPS = 'viewallapps',
@@ -23,9 +23,9 @@ export enum PermissionEnum {
     DELETE_APP_OPS = 'deleteappops',
     DELETE_ALL_APP_OPS = 'deleteallappops',
 
-    // ProjScope
+    // Project Scope
     REVOKE_PROJECT_USERS = 'revokeprojectusers',
-    //TenantScope
+    //Tenant Scope
     DELETE_USER = 'deletetenantuser',
 }
 

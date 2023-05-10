@@ -10,17 +10,15 @@ export class UserContextProvider extends RequestContext {
         super();
     }
 
-    
-
     setUser(user: UserContext) {
         this._user = user;
     }
 
-    setUserContext(user: UserContext){
+    setUserContext(user: UserContext) {
         const ctx: UserContextProvider = RequestContext.get();
         ctx.setUser(user);
     }
-    
+
     get user(): UserContext {
         const ctx: UserContextProvider = RequestContext.get();
         console.log("ctx2: ", ctx)
