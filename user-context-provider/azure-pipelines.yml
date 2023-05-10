@@ -1,10 +1,13 @@
 trigger:
   branches:
-    include:
-      - main
+    exclude:
+      - '*'
   paths:
     exclude:
       - '*'
+  branches:
+    include:
+      - refs/heads/main
 
 pool:
   vmImage: 'ubuntu-latest'
