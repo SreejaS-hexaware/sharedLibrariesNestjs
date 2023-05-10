@@ -5,10 +5,7 @@ trigger:
   paths:
     exclude:
       - '*'
-  branches:
-    exclude:
-      - main
-      
+
 pool:
   vmImage: 'ubuntu-latest'
 
