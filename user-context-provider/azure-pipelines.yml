@@ -21,4 +21,3 @@ steps:
     npm run build
     npm publish 
   displayName: 'Build and publish npm package'
-  condition: eq(variables['Build.Reason'], 'IndividualCI')
