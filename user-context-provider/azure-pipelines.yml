@@ -1,8 +1,14 @@
-name: user-context-provider
-on:
-  push:
-    branches:
+trigger:
+  branches:
+    include:
       - main 
+  paths:
+    exclude:
+      - "*"
+pr:
+  branches:
+    exclude:
+      - "*"
 
 pool:
   vmImage: 'ubuntu-latest'
