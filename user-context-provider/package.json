@@ -1,6 +1,6 @@
 {
   "name": "@nestjslib/user-context-provider",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Library to set user context",
   "author": "Hexaware",
   "license": "ISC",
@@ -9,7 +9,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "update-version": "env-cmd -f .env node -e \"const packageJson = require('./package.json'); packageJson.version = process.env.PACKAGE_VERSION; require('fs').writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));\"",
-    "build": "nest build",
+    "build": "npm run update-version && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
