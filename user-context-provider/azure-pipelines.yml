@@ -11,6 +11,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  - name: buildNumber
+    value: $(Build.BuildNumber)
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -19,8 +23,8 @@ steps:
 
 - script: |
     cd user-context-provider
+    sed -i "s/PACKAGE_VERSION=.*/PACKAGE_VERSION=1.0.${{ buildNumber }}/" .env
     npm install
     npm run build
-    npm version patch
     npm publish 
   displayName: 'Build and publish npm package'
