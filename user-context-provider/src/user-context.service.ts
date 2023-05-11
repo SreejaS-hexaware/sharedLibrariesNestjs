@@ -21,6 +21,7 @@ export class UserContextProvider extends RequestContext {
 
     get user(): UserContext {
         const ctx: UserContextProvider = RequestContext.get();
+        console.log(ctx)
         return ctx._user;
     }
 
