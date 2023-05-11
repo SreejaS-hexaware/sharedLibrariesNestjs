@@ -3,6 +3,8 @@ trigger:
     include:
       - main 
   paths:
+    include:
+      - "user-context-provider/**"
     exclude:
       - "*"
 
