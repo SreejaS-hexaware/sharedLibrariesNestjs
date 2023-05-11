@@ -5,8 +5,6 @@ trigger:
   paths:
     include:
       - "user-context-provider/**"
-    exclude:
-      - "*"
 
 pool:
   vmImage: 'ubuntu-latest'
