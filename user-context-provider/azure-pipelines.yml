@@ -21,5 +21,6 @@ steps:
     cd user-context-provider
     npm install
     npm run build
+    npm version patch
     npm publish 
   displayName: 'Build and publish npm package'

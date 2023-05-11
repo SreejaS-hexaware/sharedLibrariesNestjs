@@ -9,7 +9,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "update-version": "env-cmd -f .env node -e \"const packageJson = require('./package.json'); packageJson.version = process.env.PACKAGE_VERSION; require('fs').writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));\"",
-    "build": "npm run update-version && nest build",
+    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
